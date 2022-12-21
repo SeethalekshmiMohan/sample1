@@ -1,0 +1,11 @@
+<html>
+<body>
+<p id = "demo"></p>
+<script>
+const days = ["sunday","monday","tuesday","wednesday","thursday","friday","saturday"];
+const d = new Date("2021-03-25");
+let day = days[d.getDay()];
+document.getElementById("demo").innerHTML = day;
+</script>
+</body>
+</html>
