@@ -1,0 +1,33 @@
+<html>
+<head>
+  <title>Form validation</title>
+  <script>
+  function validationForm()
+  {
+    let x = document.myform.fname.value;
+    if(x == "")
+    {
+      alert("Name must be filled out");
+      return false;
+    }
+  }
+</script>
+</head>
+<body>
+<center>
+<h2>Javascript Validation</h2>
+<form name="myform" method="get" onsubmit="return validationForm()">
+  Name: <input type="text" name="fname"><br><br>
+
+
+password: <input type="password" name="password"><br><br>
+
+
+Email: <input type="text" name="email"><br><br>
+
+phone number: <input type="number" name="phonenumber"><br><br>
+<input type="submit" value="Submit">
+</form>
+</center>
+</body>
+</html>
